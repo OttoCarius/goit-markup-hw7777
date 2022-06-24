@@ -28,7 +28,7 @@
 }
 
 .categories__btn {
-  background-color: var(--bgcolorquaternary);
+  background-color: $bgcolorquaternary;
   display: block;
   border: none;
   font-weight: 500;
@@ -47,13 +47,13 @@
 
 .categories__btn {
   font-family: inherit;
-  color: var(--colorPrimary);
+  color: $colorPrimary;
 }
 
 .categories__btn:hover,
 .categories__btn:focus {
-  color: var(--colorHero);
-  background-color: var(--btnbgColor);
+  color: $colorHero;
+  background-color: $btnbgColor;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }

@@ -1,6 +1,5 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section;
 }
 
 .customers__title {
@@ -31,6 +30,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: $btnbgColor;
+  }
 }
 
 .customers__item:not(:first-child) {
@@ -42,14 +46,9 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.customers__link:hover,
-.customers__link:focus {
-  border-color: var(--btnbgColor);
-}
-
-.customers__link:hover .customers__icon,
-.customers__link:focus .customers__icon {
-  fill: var(--colorSecondary);
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: $colorSecondary;
+  }
 }

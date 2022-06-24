@@ -1,0 +1,24 @@
+.hero__btn {
+  color: $btncolorPrimary;
+  background-color: $btnbgColor;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $btnbgColorHov;
+  }
+}

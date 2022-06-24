@@ -20,13 +20,13 @@
 }
 
 .navigation__item--current {
-  color: var(--colorSecondary);
+  color: $colorSecondary;
 }
 
 .navigation__item--current::after {
   content: '';
   display: inline-block;
-  background: var(--colorSecondary);
+  background: $colorSecondary;
   border-radius: 2px;
   opacity: 1;
   position: absolute;
@@ -47,5 +47,5 @@
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: var(--colorSecondary);
+  color: $colorSecondary;
 }

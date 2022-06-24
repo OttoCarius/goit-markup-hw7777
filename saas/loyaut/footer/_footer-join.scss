@@ -45,11 +45,11 @@
 }
 
 .join__icon {
-  fill: var(--bgColorPrimary);
+  fill: $bgColorPrimary;
 }
 
 .join__link:hover,
 .join__link:focus {
-  background-color: var(--colorSecondary);
-  border-color: var(--colorSecondary);
+  background-color: $colorSecondary;
+  border-color: $colorSecondary;
 }

@@ -52,7 +52,7 @@
 }
 
 .projects__subtitle {
-  color: var(--colorPrimary);
+  color: $colorPrimary;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -61,7 +61,7 @@
 }
 
 .projects__text {
-  color: var(--colorTertiary);
+  color: $colorTertiary;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -95,7 +95,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-  color: var(--bgColorPrimary);
+  color: $bgColorPrimary;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   height: 100%;

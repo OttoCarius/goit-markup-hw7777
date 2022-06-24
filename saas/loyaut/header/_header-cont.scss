@@ -15,7 +15,7 @@
 .contacts__link {
   display: flex;
   align-items: center;
-  color: var(--colorTertiary);
+  color: $colorTertiary;
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
@@ -24,7 +24,7 @@
 
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--colorSecondary);
+  color: $colorSecondary;
 }
 
 .contacts__icon {

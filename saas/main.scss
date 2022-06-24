@@ -1,5 +1,12 @@
 @import './utils/variables';
+@import './utils/mixin';
 @import './base/global';
+
+@import './components/page-header';
+@import './components/logo-header';
+@import './components/logo-footer';
+@import './components/hero-btn';
+@import './components/modal-btn';
 
 @import './loyaut/header/header';
 @import './loyaut/header/header-nav';

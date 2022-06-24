@@ -1,41 +1,30 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section;
 }
 
 .features__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.feature__list .features__text {
-  color: var(--colorTertiary);
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: left;
+  @include visually-hidden;
 }
 
 .feature__list {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+
+  & > li:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
-.feature__list li {
+& li {
   width: 270px;
 }
 
-.feature__list > li:not(:first-child) {
-  margin-left: 30px;
+.feature__list .features__text {
+  color: $colorTertiary;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
 }
 
 .features__subtitle {
@@ -48,7 +37,7 @@
 
 .list__item::before {
   content: '';
-  background-color: var(--bgcolorquaternary);
+  background-color: $bgcolorquaternary;
   display: block;
   height: 120px;
   background-image: url(../images/antenna.svg);
