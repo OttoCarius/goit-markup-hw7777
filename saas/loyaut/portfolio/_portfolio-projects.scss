@@ -1,0 +1,114 @@
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.projects__list > li:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.projects__list > li:nth-child(3n + 1) {
+  margin-left: 0px;
+}
+
+.projects__list > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.projects__list > li > a:hover,
+.projects__list > li > a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects__list img {
+  display: block;
+}
+
+.projects__item {
+  position: relative;
+}
+
+.projects__item > a:hover .projects__slidetext,
+.projects__item > a:focus .projects__slidetext {
+  transform: translateY(0);
+}
+
+.projects__item > a:visited {
+  color: inherit;
+}
+
+.project__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__subtitle {
+  color: var(--colorPrimary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.projects__text {
+  color: var(--colorTertiary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.projects__list a {
+  text-decoration: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__list > li {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.projects__list > li > a:hover .projects__list > li > a:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects__slidetext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--bgColorPrimary);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__wrapper-secondary {
+  padding: 20px 24px;
+  padding-inline: 24px;
+  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
