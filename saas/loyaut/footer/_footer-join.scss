@@ -1,16 +1,16 @@
 .join {
   margin-left: 70px;
-}
 
-.join > p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  & > p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 }
 
 .join__link {
@@ -25,6 +25,12 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $colorSecondary;
+    border-color: $colorSecondary;
+  }
 }
 
 .join__list {
@@ -46,10 +52,4 @@
 
 .join__icon {
   fill: $bgColorPrimary;
-}
-
-.join__link:hover,
-.join__link:focus {
-  background-color: $colorSecondary;
-  border-color: $colorSecondary;
 }

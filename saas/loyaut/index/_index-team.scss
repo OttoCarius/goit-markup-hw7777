@@ -17,17 +17,19 @@
   line-height: 1.19;
   text-align: center;
 }
-.team__list li {
-  background-color: $bgColorPrimary;
-}
 
 .team__list {
   display: flex;
   list-style-type: none;
   /* justify-content: space-between; */
-}
-.team__list > li:not(:first-child) {
-  margin-left: 30px;
+
+  & > li:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  & li {
+    background-color: $bgColorPrimary;
+  }
 }
 
 .team__name {
@@ -48,10 +50,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
 
-.team__item img {
-  display: block;
+  & img {
+    display: block;
+  }
 }
 
 .team__job {

@@ -34,22 +34,22 @@
   background-color: $bgColorSecondary;
 
   color: $colorHero;
+
+  &::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscription__icon {
   margin-left: 10px;
   fill: $colorHero;
-}
-
-.subscription__input::placeholder {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription__btn {
