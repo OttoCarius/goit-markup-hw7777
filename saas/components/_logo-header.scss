@@ -10,3 +10,8 @@
 .header__logo--secondary {
   color: $colorSecondary;
 }
+
+.page-header {
+  display: flex;
+  align-items: center;
+}

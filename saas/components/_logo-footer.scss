@@ -1,3 +1,14 @@
+.page-footer {
+  color: $colorHero;
+  background-color: $bgColorSecondary;
+  padding: 60px 0px;
+}
+
+.page-footer--display {
+  display: flex;
+  align-items: baseline;
+}
+
 .page-footer__logo {
   color: $colorHero;
   text-decoration: none;
